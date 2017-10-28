@@ -18,3 +18,5 @@ after "deploy:update", roles: :app do
   run "/bin/cp #{shared_path}/config/database.yml #{release_path}/config/"
   run "/bin/cp #{shared_path}/config/unicorn.rb #{release_path}/config/"
 end
+
+require "capistrano-unicorn"
