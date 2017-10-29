@@ -20,3 +20,7 @@ after "deploy:update", roles: :app do
 end
 
 require "capistrano-unicorn"
+
+after "deploy", :except => { :no_release => true } do
+  deploy.cleanup
+end
