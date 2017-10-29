@@ -45,4 +45,5 @@ group :development do
   gem 'spring'
 
   gem 'capistrano-unicorn', require: false
+  gem "capistrano-maintenance"
 end

@@ -47,6 +47,8 @@ GEM
       net-sftp (>= 2.0.0)
       net-ssh (>= 2.0.14)
       net-ssh-gateway (>= 1.1.0)
+    capistrano-maintenance (0.0.5)
+      capistrano (~> 2.0)
     capistrano-unicorn (0.2.0)
       capistrano (< 3.0)
     coffee-rails (4.1.1)
@@ -182,6 +184,7 @@ PLATFORMS
 
 DEPENDENCIES
   byebug
+  capistrano-maintenance
   capistrano-unicorn
   coffee-rails (~> 4.1.0)
   jbuilder (~> 2.0)
